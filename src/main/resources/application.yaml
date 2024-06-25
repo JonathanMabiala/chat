@@ -1,0 +1,14 @@
+spring:
+  application:
+    name : workedin-chat
+  datasource:
+    url: ${WN_DATABASE_URL}
+    username: ${WN_DATABASE_USER}
+    password: ${WN_DATABASE_PASSWORD}
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
